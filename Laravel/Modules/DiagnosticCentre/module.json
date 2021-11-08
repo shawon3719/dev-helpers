@@ -1,0 +1,13 @@
+{
+    "name": "DiagnosticCentre",
+    "alias": "diagnosticcentre",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DiagnosticCentre\\Providers\\DiagnosticCentreServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
