@@ -1,4 +1,4 @@
-## This is a Global Scode
+## This is a Global Scope
 ## Should be called from model that will work on every query automatically
 
 ```
