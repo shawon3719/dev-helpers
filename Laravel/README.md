@@ -39,3 +39,8 @@ View::composer('admin.partials.header', function($view)
     $view->with($data);
 });
 ```
+
+## Get data after / in laravel
+```
+Str::of($auditModel)->afterLast('\\')
+```
