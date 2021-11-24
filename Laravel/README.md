@@ -38,9 +38,25 @@ View::composer('admin.partials.header', function($view)
     $data['settings'] = SettingsService::all();
     $view->with($data);
 });
+
+
+What is difference between?
+
+  View::composer('layouts.sidebar',function ($view){
+            $view->with('newestPosts',
+                Post::latest()->take(5)->get()
+            );
+}
+and:
+
+View::share('newestPosts',Post::latest()->take(5)->get());
 ```
 
 ## Get data after / in laravel
 ```
 Str::of($auditModel)->afterLast('\\')
 ```
+
+## Detect Device OS or Browser
+
+https://github.com/jenssegers/agent
